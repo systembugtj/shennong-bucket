@@ -1,0 +1,21 @@
+{
+  "version": "0.2.2",
+  "description": "Repository decision history CLI for coding agents",
+  "homepage": "https://github.com/borg0ai/dx-reasongraph",
+  "license": "MIT",
+  "depends": "nodejs",
+  "url": "https://github.com/borg0ai/dx-reasongraph/releases/download/v0.2.2/borg0ai-reasongraph-0.2.2.tgz",
+  "hash": "a932cce4a5c7eb61b8565ce038d2cb42cc17ca662440f7558fae6a501bda4886",
+  "extract_dir": "package",
+  "bin": [["dist\\cli.js", "reasongraph"]],
+  "checkver": {
+    "github": "https://github.com/borg0ai/dx-reasongraph"
+  },
+  "autoupdate": {
+    "url": "https://github.com/borg0ai/dx-reasongraph/releases/download/v$version/borg0ai-reasongraph-$version.tgz",
+    "hash": {
+      "url": "$baseurl/SHA256SUMS",
+      "regex": "$sha256\\s+$basename"
+    }
+  }
+}
