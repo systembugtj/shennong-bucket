@@ -1,17 +1,17 @@
-# Shenong Scoop Bucket
+# Shennong Scoop Bucket
 
 Custom [Scoop](https://scoop.sh) bucket for Windows applications.
 
 ## Add this bucket
 
 ```powershell
-scoop bucket add shenong https://github.com/<owner>/shenong-bucket
+scoop bucket add shennong https://github.com/<owner>/shennong-bucket
 ```
 
 Install an app after its manifest is added:
 
 ```powershell
-scoop install shenong/<app>
+scoop install shennong/<app>
 ```
 
 ## Add an app
