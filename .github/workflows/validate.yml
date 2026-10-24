@@ -1,0 +1,28 @@
+name: Validate manifests
+
+on:
+  push:
+    paths:
+      - "bucket/**"
+      - ".github/workflows/validate.yml"
+  pull_request:
+    paths:
+      - "bucket/**"
+      - ".github/workflows/validate.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  json:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate manifest JSON
+        shell: pwsh
+        run: |
+          $manifests = Get-ChildItem bucket -Filter '*.json' -File
+          foreach ($manifest in $manifests) {
+            $null = Get-Content $manifest.FullName -Raw | ConvertFrom-Json -AsHashtable
+            Write-Host "Valid JSON: $($manifest.Name)"
+          }
