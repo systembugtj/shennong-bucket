@@ -2,6 +2,8 @@
 
 Custom [Scoop](https://scoop.sh) bucket for Windows applications.
 
+The name honors Shennong (神农), who is traditionally said to have tasted the hundred herbs.
+
 ## Add this bucket
 
 ```powershell
