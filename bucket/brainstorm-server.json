@@ -1,0 +1,21 @@
+{
+  "version": "6.5.0",
+  "description": "Local daemon for Designify visual companion screens",
+  "homepage": "https://github.com/borg0ai/designify",
+  "license": "MIT",
+  "depends": "nodejs",
+  "url": "https://github.com/borg0ai/designify/releases/download/v6.5.0/borg0ai-brainstorm-server-6.5.0.tgz",
+  "hash": "b200f9890665cdffa8ce4a5e6f36ffe9fb599a6c8c71db42783288eb11e09cc7",
+  "extract_dir": "package",
+  "bin": [["dist\\brainstorm.js", "brainstorm"]],
+  "checkver": {
+    "github": "https://github.com/borg0ai/designify"
+  },
+  "autoupdate": {
+    "url": "https://github.com/borg0ai/designify/releases/download/v$version/borg0ai-brainstorm-server-$version.tgz",
+    "hash": {
+      "url": "$baseurl/SHA256SUMS",
+      "regex": "$sha256\\s+$basename"
+    }
+  }
+}
