@@ -1,16 +1,16 @@
 {
-  "version": "1.3.2",
+  "version": "1.3.3",
   "description": "Git-tracked issue graph CLI for coding agents",
   "homepage": "https://github.com/borg0ai/dx-issuegraph",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/borg0ai/dx-issuegraph/releases/download/v1.3.2/issuegraph_1.3.2_windows-amd64.zip",
-      "hash": "2da2bebc9719ef829b8314f986aa99b4647284f21dcabc3ff579e6b3b239d118"
+      "url": "https://github.com/borg0ai/dx-issuegraph/releases/download/v1.3.3/issuegraph_1.3.3_windows-amd64.zip",
+      "hash": "89e3c0c351c2d157f1031b2e78a71bf67aad8f69403e8db651f3461b3ce8b9f7"
     },
     "arm64": {
-      "url": "https://github.com/borg0ai/dx-issuegraph/releases/download/v1.3.2/issuegraph_1.3.2_windows-arm64.zip",
-      "hash": "214777a44ee8c6da5ad3153084842c412fe3bf127f9e4cc4df70ac3ba848362f"
+      "url": "https://github.com/borg0ai/dx-issuegraph/releases/download/v1.3.3/issuegraph_1.3.3_windows-arm64.zip",
+      "hash": "5776a32d519e2d0fd63a4656b747251d0450095eb1a4c0e9c84f9af9a89ae853"
     }
   },
   "bin": "issuegraph.exe",
