@@ -1,0 +1,35 @@
+{
+  "version": "2.4.0",
+  "description": "Local-first code review knowledge graph and MCP server",
+  "homepage": "https://github.com/borg0ai/dx-reviewgraph",
+  "license": "MIT",
+  "depends": "python",
+  "url": [
+    "https://github.com/borg0ai/dx-reviewgraph/releases/download/v2.4.0/reviewgraph_engine-2.4.0-py3-none-any.whl",
+    "https://github.com/borg0ai/dx-reviewgraph/releases/download/v2.4.0/reviewgraph-2.4.0-py3-none-any.whl"
+  ],
+  "hash": [
+    "9ee1db60be5b3b84ed61a0b6547fad5d8e17dc38ffc24c81355c0840de5ab9cd",
+    "0551e7ad56e62bcf20335d1f138670cc5658a2e7aae194e718eb1a19f770eb27"
+  ],
+  "installer": {
+    "script": [
+      "python -m venv \"$dir\\venv\"",
+      "& \"$dir\\venv\\Scripts\\python.exe\" -m pip install --disable-pip-version-check \"$dir\\reviewgraph_engine-$version-py3-none-any.whl\" \"$dir\\reviewgraph-$version-py3-none-any.whl\""
+    ]
+  },
+  "bin": "venv\\Scripts\\reviewgraph.exe",
+  "checkver": {
+    "github": "https://github.com/borg0ai/dx-reviewgraph"
+  },
+  "autoupdate": {
+    "url": [
+      "https://github.com/borg0ai/dx-reviewgraph/releases/download/v$version/reviewgraph_engine-$version-py3-none-any.whl",
+      "https://github.com/borg0ai/dx-reviewgraph/releases/download/v$version/reviewgraph-$version-py3-none-any.whl"
+    ],
+    "hash": {
+      "url": "$baseurl/SHA256SUMS",
+      "regex": "$sha256\\s+$basename"
+    }
+  }
+}
